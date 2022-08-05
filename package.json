@@ -6,7 +6,10 @@
     "node" : ">=16.0.0"
   },
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoto/alfred-uuid-ulid-generator.git"

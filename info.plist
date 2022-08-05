@@ -15,7 +15,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Generate UUID &amp; ULID</string>
+	<string>Random UUID &amp; ULID</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -44,7 +44,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Randomizing...</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -54,7 +54,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>Random UUID &amp; ULID</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

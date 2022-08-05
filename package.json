@@ -1,0 +1,23 @@
+{
+  "name": "alfred-uuid-ulid-generator",
+  "version": "1.0.0",
+  "description": "Generate UUID & ULID",
+  "engines" : {
+    "node" : ">=16.0.0"
+  },
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoto/alfred-uuid-ulid-generator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoto/alfred-uuid-ulid-generator/issues"
+  },
+  "homepage": "https://github.com/hoto/alfred-uuid-ulid-generator#readme",
+  "dependencies": {
+    "alfy": "1.0.0"
+  }
+}

@@ -1,13 +1,48 @@
-import alfy from 'alfy';
+import alfy from 'alfy'
+import {v4 as uuidv4} from 'uuid'
+import {ulid} from 'ulid'
 
-const data = await alfy.fetch('https://jsonplaceholder.typicode.com/posts');
+const uuid = uuidv4()
 
-const items = alfy
-    .inputMatches(data, 'title')
-    .map(element => ({
-        title: element.title,
-        subtitle: element.body,
-        arg: element.id
-    }));
+const output = []
 
-alfy.output(items);
+output.push(
+    {
+        title: uuid,
+        subtitle: 'ULID as UUID v4',
+        arg: uuid,
+        text: {
+            copy: uuid,
+            largetype: uuid,
+        },
+        variables: {
+            action: 'copy',
+        },
+    },
+    {
+        title: ulid(),
+        subtitle: 'ULID [Timestamp: 2022-10-02T10:10:10]',
+        arg: uuid,
+        text: {
+            copy: uuid,
+            largetype: uuid,
+        },
+        variables: {
+            action: 'copy',
+        },
+    },
+    {
+        title: uuidv4(),
+        subtitle: 'UUID v4',
+        arg: uuid,
+        text: {
+            copy: uuid,
+            largetype: uuid,
+        },
+        variables: {
+            action: 'copy',
+        },
+    }
+)
+
+alfy.output(output)

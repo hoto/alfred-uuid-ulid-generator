@@ -9,17 +9,18 @@ Alfred workflow to generate random UUIDs & ULIDs.
 
     npm install --global @hoto/alfred-uuid-ulid-generator
 
-### What is ULID
+### Why use ULIDs vs UUIDs
+
+Example ULID conversion:
 
     ULID:              01G9R78VJ5VXAJRA2K7V0RXB87
     ULID as UUID v4:   01827074-6E45-DF55-2C28-533EC18EAD07
     ULID as timestamp: 2022-08-06T00:00:54.853Z
 
 Benefits of ULIDs:
-* Lexicographically sortable
-* 26 character string vs 36 characters for UUID
+* Lexicographically sortable (even when converted to UUID v4)
 * 128-bit compatibility with UUID
-
+* 26 character string vs 36 characters for UUID
 
 ULID is made up of two base32 encoded numbers, a UNIX timestamp followed by a random number:
 

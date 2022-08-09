@@ -1,6 +1,6 @@
 {
   "name": "@hoto/alfred-uuid-ulid-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate UUID & ULID",
   "engines": {
     "node": ">=16.0.0"

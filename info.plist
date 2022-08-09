@@ -81,7 +81,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Random UUID &amp; ULID</string>
+				<string>Random UUID</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -149,7 +149,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Random UUID &amp; ULID</string>
+				<string>Random ULID</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

@@ -73,7 +73,7 @@
 				<key>runningsubtext</key>
 				<string>Generating...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node index.js "uuid"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -141,7 +141,7 @@
 				<key>runningsubtext</key>
 				<string>Generating...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node index.js "ulid"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -170,9 +170,9 @@
 		<key>7395ECDF-0C84-4884-8333-857408469913</key>
 		<dict>
 			<key>xpos</key>
-			<real>390</real>
+			<real>380</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>120</real>
 		</dict>
 		<key>9837562B-734D-4C15-A202-069E0E237466</key>
 		<dict>

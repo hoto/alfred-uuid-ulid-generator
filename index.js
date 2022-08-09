@@ -1,8 +1,9 @@
 import alfy from 'alfy'
 import {v4 as uuidv4} from 'uuid'
-import {ulid} from 'ulid'
+import {ulid as nextUlid} from 'ulid'
 
 const uuid = uuidv4()
+const ulid = nextUlid()
 const output = []
 
 output.push(
@@ -19,12 +20,12 @@ output.push(
         },
     },
     {
-        title: ulid(),
+        title: ulid,
         subtitle: 'ULID',
-        arg: uuid,
+        arg: ulid,
         text: {
-            copy: uuid,
-            largetype: uuid,
+            copy: ulid,
+            largetype: ulid,
         },
         variables: {
             action: 'copy',

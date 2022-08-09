@@ -17,10 +17,14 @@ Example ULID conversion:
     ULID as UUID v4:   01827074-6E45-DF55-2C28-533EC18EAD07
     ULID as timestamp: 2022-08-06T00:00:54.853Z
 
-Benefits of ULIDs:
+ULIDs features:
 * Lexicographically sortable (even when converted to UUID v4)
-* 128-bit compatibility with UUID
-* 26 character string vs 36 characters for UUID
+* Compatible with UUIDs 128 format
+* Shorter than UUIDs, 26 character string vs 36 characters for UUID
+* Encoded using Crockford’s Base32 alphabet (0123456789ABCDEFGHJKMNPQRSTVWXYZ)
+    * Excludes I, L, O, and U letters to avoid any unexpected confusion
+    * UUID uses hex digits plus hyphens (0-9, A-F)
+* The timestamp is accurate to the millisecond
 
 ULID is made up of two base32 encoded numbers, a UNIX timestamp followed by a random number:
 

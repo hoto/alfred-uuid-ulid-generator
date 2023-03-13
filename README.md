@@ -13,6 +13,8 @@ Alfred workflow to generate random UUIDs & ULIDs.
 
 ### Install
 
+Workflow will appear in Alfred after installing it with npm:
+
     npm install --global @hoto/alfred-uuid-ulid-generator
 
 ### Why use ULIDs vs UUIDs

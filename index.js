@@ -4,10 +4,24 @@ import {ulid as nextUlid} from 'ulid'
 
 const uuid = uuidv4()
 const ulid = nextUlid()
+const partyId = `PAR~${uuidv4()}`
+
 const output = []
 
+const partyIdItem = {
+    title: partyId,
+    subtitle: 'Party ID',
+    arg: partyId,
+    text: {
+        copy: partyId,
+        largetype: partyId,
+    },
+    variables: {
+        action: 'copy',
+    },
+}
 const uuidItem = {
-    title: uuidv4(),
+    title:uuid,
     subtitle: 'UUID v4',
     arg: uuid,
     text: {
@@ -32,8 +46,18 @@ const ulidItem = {
     },
 }
 
-alfy.input === 'uuid' ?
-    output.push(uuidItem, ulidItem) :
-    output.push(ulidItem, uuidItem)
+switch(alfy.input){
+    case 'uuid':
+        output.push(uuidItem)
+        break
+    case 'ulid':
+        output.push(ulidItem)
+        break
+    case 'party':
+        output.push(partyIdItem)
+        break
+    default:
+        output.push(partyIdItem, uuidItem, ulidItem)
+}
 
 alfy.output(output)
